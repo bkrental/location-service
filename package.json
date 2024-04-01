@@ -1,0 +1,29 @@
+{
+  "name": "location-service",
+  "main": "src/server.ts",
+  "packageManager": "yarn@3.3.1",
+  "scripts": {
+    "start": "ts-node dist/server.js",
+    "local": "NODE_ENV=local nodemon src/server.ts",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.42",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC"
+}
